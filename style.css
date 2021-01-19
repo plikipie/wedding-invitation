@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:wght@100;300;400;600&family=Rubik+Mono+One&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+    -webkit-box-shadow: -1px 10px 12px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 12px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 12px -4px rgba(0, 0, 0, 0.75);
+}
+
+.skip_content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: rgb(10, 7, 810, 7, 8);
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    z-index: 100;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skip_content:focus {
+    top: 0;
+}
+
+.navbar {
+    background-color: white !important;
+    padding-bottom: 5px !important;
+}
+
+.nav-logo {
+    text-align: center;
+    color: #6e36ae;
+    cursor: pointer;
+}
+
+a.navbar-brand {
+    font-weight: bold;
+    text-align: center;
+    padding-left: 15px;
+    color: #6e36ae !important;
+}
+
+.nav-logo p {
+    font-family: "Dancing Script", cursive;
+    color: #6e36ae;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul li a {
+    color: #6e36ae !important;
+}
+
+ul li a:hover {
+    color: #e130c3 !important;
+}
+
+
+/* JUMBOTRON */
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 900px;
+    justify-content: center;
+    background-image: url(assets/img/header.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    object-fit: center !important;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-jumbotron p {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    line-height: normal;
+    text-shadow: 2px 2px #b088f9;
+    opacity: 0.9;
+}
+
+.container-jumbotron h1 {
+    font-family: "Krona One", sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px #b088f9;
+    opacity: 0.9;
+}
+
+
+/* QUOTE */
+
+.container-quote1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 669px;
+    color: #6e36ae !important;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#quote {
+    padding-bottom: 32px;
+}
+
+.quote-img {
+    width: 100%;
+    min-height: 650px;
+    max-width: 570px;
+    background-image: url(assets/img/prewed4.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.quote h1 {
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.quote h1 span {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+
+/* QUTE 2 */
+
+.container-quote2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 669px;
+    padding: 3rem;
+    color: #6e36ae !important;
+}
+
+.quote-img2 {
+    width: 100%;
+    min-height: 650px;
+    max-width: 570px;
+    background-image: url("assets/img/prewed11.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 2em;
+}
+
+.quote2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.quote2 h1 {
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.quote2 h1 span {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+
+/* WEDDING */
+
+.wedding {
+    display: flex;
+    background-color: #b088f9;
+    flex-direction: column;
+    padding-top: 2em;
+    color: white;
+    object-fit: center;
+    object-position: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* .wedding {
+                background-color: #b088f9;
+                color: white;
+                justify-content: center;
+                object-fit: center;
+                object-position: center;
+                padding-top: 2em;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas: "title title" "title nama" "foto detail" "nama nama" "detail foto";
+                .title {
+                    grid-area: title;
+                    background-color: #6e36ae;
+                }
+                .nama {
+                    grid-area: nama;
+                }
+                .detail {
+                    grid-area: detail;
+                }
+                .foto {
+                    grid-area: foto;
+                } */
+
+.wedding__title {
+    display: grid;
+    text-align: center;
+}
+
+.rose img {
+    width: 5%;
+    padding-bottom: 0.5em;
+}
+
+.wedding__title h1 {
+    font-family: "Sacramento", cursive;
+    text-shadow: 2px 2px #6e36ae;
+    line-height: normal;
+    font-weight: 600;
+    font-size: 80px;
+    padding-top: 1em;
+}
+
+.wedding__title p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.wedding__title p span {
+    font-weight: bold;
+}
+
+.weddig__name {
+    height: 194px;
+}
+
+.wedding__name h1 {
+    font-family: "Parisienne", cursive;
+    font-size: 120px;
+    padding: 10px;
+    text-align: center;
+}
+
+.wedding__personal {
+    display: flex;
+    align-items: baseline;
+    height: 300px;
+    justify-content: right;
+}
+
+.personal__img img {
+    width: 100%;
+    max-width: 50%;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.personal__img {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.wedding__personal_2 {
+    display: flex;
+    height: 300px;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+.personal__img_2 img {
+    width: 100%;
+    max-width: 50%;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.personal__detail {
+    padding-left: 12px;
+}
+
+.personal__detail h1,
+h4 {
+    font-weight: 700;
+}
+
+.personal__detail_2 {
+    text-align: end;
+    padding-right: 20px;
+}
+
+.personal__detail_2 h1,
+h4 {
+    font-weight: bold;
+}
+
+
+/* RECEPTION */
+
+.reception__container {
+    display: grid;
+    font-size: 3em;
+    background-color: #b088f9;
+    padding-top: 2em;
+    font-weight: 600;
+    padding: 1rem 3rem;
+}
+
+.icons {
+    width: 10%;
+}
+
+.reception__title {
+    text-align: center;
+}
+
+.reception__title h1 {
+    align-items: center;
+    font-family: "Sacramento", cursive;
+    text-shadow: 2px 2px #6e36ae;
+    color: white;
+    font-size: 80px;
+}
+
+.reception__detail {
+    align-items: center;
+    background-color: #b088f9;
+    gap: 20px;
+    padding: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    position: relative;
+    justify-self: end;
+    border: 1px solid white;
+    -webkit-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
+    -moz-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
+    box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.reception__date,
+.reception__watch,
+.reception__location {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line {
+    border-left: 2px solid white;
+    height: 12em;
+}
+
+.cards2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    color: white;
+    border: 1px solid white;
+    -webkit-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
+    -moz-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
+    box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .container {
+        justify-content: center !important;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .jumbotron {
+        padding-top: -5rem;
+    }
+    .container-jumbotron {
+        display: grid;
+        object-position: center;
+        object-fit: center;
+        max-width: fit-content;
+        text-align: center;
+        align-items: center;
+        max-height: fit-content;
+    }
+    .container-jumbotron h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+    .container-jumbotron p {
+        font-size: 1em;
+    }
+    .container-quote1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    .quote-img {
+        min-height: 500px !important;
+    }
+    .container-quote1 .quote h1 {
+        font-size: 2em;
+        text-align: center;
+        object-position: center;
+        object-fit: center;
+    }
+    .quote {
+        padding-bottom: 10px;
+    }
+    .container-quote2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    .quote2 {
+        order: -1;
+        background-color: white;
+        min-height: 255px;
+    }
+    .container-quote2 .quote2 h1 {
+        font-size: 2em;
+        text-align: center;
+        object-position: center;
+        object-fit: center;
+    }
+}
+
+@media screen and (min-width: 768px) {}
