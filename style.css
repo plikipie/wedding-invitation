@@ -127,7 +127,6 @@ ul li a:hover {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    max-height: 669px;
     color: #6e36ae !important;
     padding-bottom: 2em;
     padding-top: 2em;
@@ -494,6 +493,7 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         text-align: center;
+        overflow: hidden;
     }
     .quote-img {
         min-height: 500px !important;
@@ -512,6 +512,7 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         text-align: center;
+        overflow: hidden;
     }
     .quote2 {
         order: -1;
@@ -523,6 +524,37 @@ h2 {
         text-align: center;
         object-position: center;
         object-fit: center;
+    }
+    /* Wedding Mobile Breakpoint */
+    .wedding__title h1 {
+        font-size: 2em;
+    }
+    .wedding__title p {
+        font-size: medium;
+    }
+    .wedding__personal,
+    .wedding__personal_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .wedding__title {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .personal__detail {
+        text-align: center;
+    }
+    .wedding__name {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+    .personal__img {
+        display: flex;
+        align-items: center;
+        object-fit: center;
+        object-position: center;
+        justify-content: center;
     }
     /* Reception Mobile Breakpoint */
     .reception__detail {
