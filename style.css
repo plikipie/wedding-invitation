@@ -27,6 +27,7 @@ nav {
     -webkit-box-shadow: -1px 10px 12px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 10px 12px -4px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 10px 12px -4px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
 }
 
 .skip_content {
@@ -133,7 +134,7 @@ ul li a:hover {
 }
 
 #quote {
-    padding-bottom: 32px;
+    padding-bottom: 2em;
 }
 
 .quote-img {
@@ -377,7 +378,6 @@ h4 {
     justify-content: space-evenly;
     text-align: center;
     color: white;
-    position: relative;
     justify-self: end;
     border: 1px solid white;
     -webkit-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
@@ -386,16 +386,26 @@ h4 {
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
+    width: 500px;
+    min-height: 100%;
+    object-fit: center;
 }
 
 .reception__date,
 .reception__watch,
 .reception__location {
     display: flex;
-    margin: 2rem 0rem;
-    padding: 1rem 5rem;
     align-items: center;
     justify-content: space-between;
+    margin: 2px;
+    padding: 5px;
+}
+
+.cards h1,
+.cards2 h1 {
+    font-family: "Parisienne", cursive;
+    font-weight: 100;
+    padding: 2px;
 }
 
 .line {
@@ -409,7 +419,6 @@ h4 {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    position: relative;
     color: white;
     border: 1px solid white;
     -webkit-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
@@ -418,6 +427,31 @@ h4 {
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
+    width: 500px;
+    min-height: 100%;
+    object-fit: center;
+}
+
+.reception__date2,
+.reception__watch2,
+.reception__location2 h1,
+h2 {
+    text-align: left;
+    padding: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2px;
+    padding: 5px;
+}
+
+.reception__detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-height: 100%;
+    object-fit: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -489,6 +523,22 @@ h4 {
         text-align: center;
         object-position: center;
         object-fit: center;
+    }
+    /* Reception Mobile Breakpoint */
+    .reception__detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+    .cards,
+    .cards2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        min-width: 0;
+    }
+    img .icons {
+        width: 3% !important;
     }
 }
 
