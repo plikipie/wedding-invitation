@@ -453,6 +453,43 @@ h2 {
     object-fit: center;
 }
 
+
+/* gallery */
+
+.gallery__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: center;
+    object-position: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.gallery__title h1 {
+    font-size: 80px;
+    color: #6e36ae;
+    font-weight: bolder;
+    font-family: "Sacramento", cursive;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.column {
+    display: grid;
+    grid-template-rows: max-content;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     nav {
         display: flex;
@@ -543,6 +580,7 @@ h2 {
     }
     .personal__detail {
         text-align: center;
+        padding-bottom: 2em;
     }
     .wedding__name {
         display: grid;
@@ -557,10 +595,15 @@ h2 {
         justify-content: center;
     }
     /* Reception Mobile Breakpoint */
-    .reception__detail {
+    .reception__container {
         display: grid;
         grid-template-columns: 1fr;
         overflow: hidden;
+    }
+    .reception__detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: auto;
     }
     .cards,
     .cards2 {
