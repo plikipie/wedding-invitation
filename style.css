@@ -166,6 +166,10 @@ ul li a:hover {
 
 /* QUTE 2 */
 
+#quote {
+    margin-bottom: 2rem;
+}
+
 .container-quote2 {
     display: flex;
     justify-content: space-around;
@@ -328,6 +332,7 @@ h4 {
 .personal__detail_2 {
     text-align: end;
     padding-right: 20px;
+    position: relative;
 }
 
 .personal__detail_2 h1,
@@ -335,8 +340,48 @@ h4 {
     font-weight: bold;
 }
 
+.column__personal2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 
 /* RECEPTION */
+
+.pengumuman {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    object-position: center;
+    object-fit: cover;
+    text-align: center;
+    padding: 10px;
+}
+
+.pengumuman h2 {
+    justify-content: center;
+    align-content: center;
+    object-position: center;
+    object-fit: cover;
+    text-align: center;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li p {
+    font-size: medium;
+    font-weight: 300;
+}
+
+.pengumuman p {
+    font-size: medium;
+    font-weight: 300;
+}
 
 .reception__container {
     display: grid;
@@ -345,6 +390,10 @@ h4 {
     padding-top: 2em;
     font-weight: 600;
     padding: 1rem 3rem;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
 }
 
 .icons {
@@ -482,12 +531,15 @@ h2 {
 .column {
     display: grid;
     grid-template-rows: max-content;
+    overflow: hidden;
 }
 
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
@@ -554,7 +606,12 @@ h2 {
     .quote2 {
         order: -1;
         background-color: white;
-        min-height: 255px;
+        object-fit: cover;
+        padding: 10px;
+    }
+    .quote-img2 {
+        object-fit: cover;
+        object-position: center;
     }
     .container-quote2 .quote2 h1 {
         font-size: 2em;
@@ -582,12 +639,30 @@ h2 {
         text-align: center;
         padding-bottom: 2em;
     }
+    .personal__detail_2 {
+        text-align: center;
+        padding-bottom: 2em;
+    }
     .wedding__name {
         display: grid;
         grid-template-columns: 1fr;
         overflow: hidden;
+        padding-top: 20px;
+    }
+    .wedding__name2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        padding-top: 40px;
     }
     .personal__img {
+        display: flex;
+        align-items: center;
+        object-fit: center;
+        object-position: center;
+        justify-content: center;
+    }
+    .personal__img_2 {
         display: flex;
         align-items: center;
         object-fit: center;
@@ -603,7 +678,10 @@ h2 {
     .reception__detail {
         display: grid;
         grid-template-columns: 1fr;
-        overflow: auto;
+        grid-auto-columns: max-content;
+        grid-template-rows: max-content;
+        overflow: hidden;
+        padding: 10px;
     }
     .cards,
     .cards2 {
@@ -614,6 +692,44 @@ h2 {
     }
     img .icons {
         width: 3% !important;
+    }
+    /* gallery */
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        object-position: center;
+        object-fit: center;
+        text-align: center;
+    }
+    .gallery__title {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        object-position: center;
+        object-fit: center;
+        text-align: center;
+    }
+    .gallery__title h1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        object-position: center;
+        object-fit: center;
+        text-align: center;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        object-position: center;
+        object-fit: cover;
+        text-align: center;
+        overflow: hidden;
     }
 }
 
