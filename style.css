@@ -526,6 +526,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    padding: 10px;
 }
 
 .column {
@@ -634,14 +635,24 @@ h2 {
     .wedding__title {
         display: grid;
         grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .wedding__title p {
+        font-size: medium;
+        font-weight: 100;
     }
     .personal__detail {
         text-align: center;
         padding-bottom: 2em;
+        font-size: medium;
+        font-weight: 100;
     }
     .personal__detail_2 {
         text-align: center;
         padding-bottom: 2em;
+        font-size: medium;
+        font-weight: 100;
+        z-index: 99;
     }
     .wedding__name {
         display: grid;
@@ -654,6 +665,7 @@ h2 {
         grid-template-columns: 1fr;
         overflow: hidden;
         padding-top: 40px;
+        margin-top: 20px;
     }
     .personal__img {
         display: flex;
@@ -670,10 +682,12 @@ h2 {
         justify-content: center;
     }
     /* Reception Mobile Breakpoint */
-    .reception__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        overflow: hidden;
+    .reception__title h1 {
+        font-size: 0.8em;
+    }
+    .pengumuman p {
+        font-size: medium;
+        font-weight: 100;
     }
     .reception__detail {
         display: grid;
