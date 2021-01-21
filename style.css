@@ -286,13 +286,6 @@ ul li a:hover {
     text-align: center;
 }
 
-.wedding__personal {
-    display: flex;
-    align-items: baseline;
-    height: 300px;
-    justify-content: right;
-}
-
 .personal__img img {
     width: 100%;
     max-width: 50%;
@@ -305,12 +298,26 @@ ul li a:hover {
     padding-right: 10px;
 }
 
+// class ini ga usah ada, karna cuma beda 1 property
+// bisa pake class wedding__personal
+// ditambah wedding__personal--reverse
 .wedding__personal_2 {
     display: flex;
     height: 300px;
     align-items: baseline;
     flex-direction: row-reverse;
     justify-content: right;
+}
+
+.wedding__personal {
+    display: flex;
+    align-items: baseline;
+    height: 300px;
+    justify-content: right;
+}
+
+.wedding__personal--reverse {
+    flex-direction: row-reverse;
 }
 
 .personal__img_2 img {
@@ -631,6 +638,7 @@ h2 {
     .wedding__personal_2 {
         display: grid;
         grid-template-columns: 1fr;
+        height: 100%;
     }
     .wedding__title {
         display: grid;
