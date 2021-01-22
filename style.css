@@ -555,14 +555,16 @@ h2 {
 
 .footer {
     display: grid;
+    height: 120px;
     justify-content: center;
     align-items: center;
     object-fit: center;
     text-align: center;
+    padding: 10px;
 }
 
 .footer h1 {
-    font-size: medium;
+    font-size: 2em;
     font-weight: 400;
     color: #6e36ae;
 }
@@ -579,6 +581,26 @@ h2 {
 
 .footer h1 span {
     color: red;
+}
+
+.sosmed {
+    display: flex;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed a img {
+    width: 30%;
+    margin: 5px;
+    transition: 0.3s ease-out;
+}
+
+.sosmed a img:hover {
+    background-color: silver;
+    border-radius: 25%;
+    border: 1px solid silver;
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -783,6 +805,22 @@ h2 {
         object-fit: cover;
         text-align: center;
         overflow: hidden;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        font-size: 0.6em;
+        justify-content: center;
+        align-items: center;
+    }
+    .sosmed {
+        display: flex;
+        width: 350px;
+        justify-content: end;
+        align-items: center;
+        padding-left: 50px;
+        padding: 5px;
     }
 }
 
