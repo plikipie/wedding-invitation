@@ -261,7 +261,6 @@ ul li a:hover {
     font-family: "Sacramento", cursive;
     text-shadow: 2px 2px #6e36ae;
     line-height: normal;
-    font-weight: 600;
     font-size: 80px;
     padding-top: 1em;
 }
@@ -336,6 +335,12 @@ h4 {
     font-weight: 700;
 }
 
+.personal__detail,
+.personal__detail_2 p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .personal__detail_2 {
     text-align: end;
     padding-right: 20px;
@@ -365,6 +370,8 @@ h4 {
     object-fit: cover;
     text-align: center;
     padding: 10px;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .pengumuman h2 {
@@ -374,6 +381,8 @@ h4 {
     object-fit: cover;
     text-align: center;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 ul li {
@@ -381,13 +390,13 @@ ul li {
 }
 
 ul li p {
-    font-size: medium;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .pengumuman p {
-    font-size: medium;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .reception__container {
@@ -420,10 +429,14 @@ ul li p {
 }
 
 .reception__detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    object-fit: center;
     align-items: center;
     background-color: #b088f9;
     gap: 20px;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .cards {
@@ -433,7 +446,6 @@ ul li p {
     justify-content: space-evenly;
     text-align: center;
     color: white;
-    justify-self: end;
     border: 1px solid white;
     -webkit-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
     -moz-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
@@ -446,14 +458,12 @@ ul li p {
     object-fit: center;
 }
 
-.reception__date,
-.reception__watch,
-.reception__location {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2px;
-    padding: 5px;
+.cards2 {
+    justify-self: end;
+}
+
+.cards3 {
+    justify-self: start;
 }
 
 .cards h1,
@@ -461,52 +471,6 @@ ul li p {
     font-family: "Parisienne", cursive;
     font-weight: 100;
     padding: 2px;
-}
-
-.line {
-    border-left: 2px solid white;
-    height: 12em;
-}
-
-.cards2 {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    color: white;
-    border: 1px solid white;
-    -webkit-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
-    -moz-box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
-    box-shadow: 1px 2px 13px -4px rgba(252, 127, 198, 1);
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    width: 500px;
-    min-height: 100%;
-    object-fit: center;
-}
-
-.reception__date2,
-.reception__watch2,
-.reception__location2 h1,
-h2 {
-    text-align: left;
-    padding: 5px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2px;
-    padding: 5px;
-}
-
-.reception__detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    max-height: 100%;
-    object-fit: center;
 }
 
 
@@ -564,7 +528,7 @@ h2 {
 }
 
 .footer h1 {
-    font-size: 2em;
+    font-size: x-large;
     font-weight: 400;
     color: #6e36ae;
 }
@@ -594,13 +558,6 @@ h2 {
     width: 30%;
     margin: 5px;
     transition: 0.3s ease-out;
-}
-
-.sosmed a img:hover {
-    background-color: silver;
-    border-radius: 25%;
-    border: 1px solid silver;
-    transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -707,6 +664,10 @@ h2 {
         padding-bottom: 2em;
         font-size: medium;
         font-weight: 100;
+    }
+    .personal__detail p {
+        font-size: medium;
+        font-weight: 400;
     }
     .personal__detail_2 {
         text-align: center;
