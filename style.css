@@ -550,6 +550,37 @@ h2 {
     overflow: hidden;
 }
 
+
+/* footer */
+
+.footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    object-fit: center;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: medium;
+    font-weight: 400;
+    color: #6e36ae;
+}
+
+.footer h1 a {
+    color: #6e36ae;
+    font-weight: bold;
+}
+
+.footer h1 a:hover {
+    color: #e130c3;
+    text-decoration: none;
+}
+
+.footer h1 span {
+    color: red;
+}
+
 @media screen and (max-width: 600px) {
     nav {
         display: flex;
