@@ -107,7 +107,7 @@ ul li a:hover {
     text-align: center;
     color: white;
     line-height: normal;
-    text-shadow: 2px 2px #b088f9;
+    text-shadow: 1px 1px #b088f9;
     opacity: 0.9;
 }
 
@@ -297,9 +297,6 @@ ul li a:hover {
     padding-right: 10px;
 }
 
-// class ini ga usah ada, karna cuma beda 1 property
-// bisa pake class wedding__personal
-// ditambah wedding__personal--reverse
 .wedding__personal_2 {
     display: flex;
     height: 300px;
@@ -413,7 +410,7 @@ ul li p {
 }
 
 .icons {
-    width: 10%;
+    width: 8%;
 }
 
 .reception__title {
@@ -436,7 +433,23 @@ ul li p {
     align-items: center;
     background-color: #b088f9;
     gap: 20px;
-    padding: 1rem;
+    padding: 10px;
+}
+
+.reception__date,
+.reception__watch,
+.reception__location {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.reception__date h2,
+.reception__watch h2,
+.reception__location h2 {
+    text-align: center !important;
+    font-size: 2rem;
 }
 
 .cards {
@@ -453,9 +466,10 @@ ul li p {
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-    width: 500px;
     min-height: 100%;
     object-fit: center;
+    width: 500px;
+    padding: 10px;
 }
 
 .cards2 {
@@ -548,16 +562,19 @@ ul li p {
 }
 
 .sosmed {
-    display: flex;
-    width: 450px;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
 }
 
 .sosmed a img {
-    width: 30%;
-    margin: 5px;
+    justify-self: end;
+}
+
+.sosmed a img {
+    width: 25%;
     transition: 0.3s ease-out;
+    padding: 10px 0px;
 }
 
 @media screen and (max-width: 600px) {
@@ -664,6 +681,7 @@ ul li p {
         padding-bottom: 2em;
         font-size: medium;
         font-weight: 100;
+        padding: 15px 5px;
     }
     .personal__detail p {
         font-size: medium;
@@ -674,7 +692,11 @@ ul li p {
         padding-bottom: 2em;
         font-size: medium;
         font-weight: 100;
-        z-index: 99;
+        padding: 15px 5px;
+    }
+    .personal__detail_2 p {
+        font-size: medium;
+        font-weight: 400;
     }
     .wedding__name {
         display: grid;
@@ -704,20 +726,25 @@ ul li p {
         justify-content: center;
     }
     /* Reception Mobile Breakpoint */
+    .reception__detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        padding: 10px;
+        font-size: medium;
+        font-weight: 100;
+        text-align: center;
+    }
     .reception__title h1 {
         font-size: 0.8em;
+    }
+    .pengumuman h2 {
+        font-size: medium;
+        font-weight: 100;
     }
     .pengumuman p {
         font-size: medium;
         font-weight: 100;
-    }
-    .reception__detail {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-columns: max-content;
-        grid-template-rows: max-content;
-        overflow: hidden;
-        padding: 10px;
     }
     .cards,
     .cards2 {
@@ -756,6 +783,7 @@ ul li p {
         object-position: center;
         object-fit: center;
         text-align: center;
+        font-size: 2.5rem;
     }
     .row {
         display: grid;
@@ -775,13 +803,8 @@ ul li p {
         justify-content: center;
         align-items: center;
     }
-    .sosmed {
-        display: flex;
-        width: 350px;
-        justify-content: end;
-        align-items: center;
-        padding-left: 50px;
-        padding: 5px;
+    .footer .sosmed {
+        justify-self: center;
     }
 }
 
