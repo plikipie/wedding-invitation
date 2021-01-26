@@ -679,12 +679,16 @@ ul li p {
     .quote {
         padding-bottom: 10px;
     }
+    #quote {
+        padding-bottom: 0;
+    }
     .container-quote2 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         text-align: center;
         overflow: hidden;
+        padding: 0;
     }
     .quote2 {
         order: -1;
@@ -750,7 +754,6 @@ ul li p {
         display: grid;
         grid-template-columns: 1fr;
         overflow: hidden;
-        padding-top: 20px;
     }
     .wedding__name2 {
         display: grid;
