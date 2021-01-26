@@ -1,11 +1,11 @@
 var static = require("node-static");
-var file = new static.Server("index.html");
+var fileServer = new static.Server("./publics");
 
 require("http")
   .createServer(function (request, response) {
     request
       .addListener("end", function () {
-        file.serve(request, response);
+        fileServer.serve(request, response);
       })
       .resume();
   })

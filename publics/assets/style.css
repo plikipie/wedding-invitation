@@ -105,7 +105,7 @@ ul li a:hover {
     height: 100%;
     min-height: 900px;
     justify-content: center;
-    background-image: url(assets/img/header.jpg);
+    background-image: url(./img/header.jpg);
     background-attachment: fixed;
     background-position: top;
     object-fit: center !important;
@@ -151,7 +151,7 @@ ul li a:hover {
     width: 100%;
     min-height: 650px;
     max-width: 570px;
-    background-image: url(assets/img/prewed4.jpg);
+    background-image: url(./img/prewed4.jpg);
     background-position: center;
     background-size: cover;
     margin-right: 30px;
@@ -194,7 +194,7 @@ ul li a:hover {
     width: 100%;
     min-height: 650px;
     max-width: 570px;
-    background-image: url("assets/img/prewed11.jpg");
+    background-image: url("./img/prewed11.jpg");
     background-position: center;
     background-size: cover;
     padding-left: 2em;
